@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personalidades — Consciência Negra</title>
+  <meta name="description" content="Mini-biografias de personalidades negras brasileiras nas artes, ciência, política e esporte." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Consciência Negra</a>
+      <nav class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">História</a></li>
+          <li><a href="personalidades.html">Personalidades</a></li>
+          <li><a href="acoes.html">Desafios & Ações</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle-2" aria-pressed="false" aria-label="Alternar tema">🌙</button>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Personalidades e Contribuições</h1>
+
+    <section class="controls" aria-hidden="false">
+      <label for="filter-area">Filtrar por área:</label>
+      <select id="filter-area" aria-label="Filtrar personalidades por área">
+        <option value="todas">Todas</option>
+        <option value="arte">Arte</option>
+        <option value="ciencia">Ciência</option>
+        <option value="politica">Política</option>
+        <option value="esporte">Esporte</option>
+      </select>
+    </section>
+
+    <section class="cards" id="cards" aria-live="polite">
+      <!-- Card exemplo -->
+      <article class="card" data-area="arte">
+        <img src="assets/images/personalidade1.jpg" alt="Retrato de [Nome] artista" loading="lazy" />
+        <h2>Nome da Pessoa — Arte</h2>
+        <p>Mini-biografia: contribuições na música e literatura.</p>
+        <a href="#" class="read-more">Ler mais</a>
+      </article>
+
+      <article class="card" data-area="ciencia">
+        <img src="assets/images/personalidade2.jpg" alt="Retrato de [Nome] cientista" loading="lazy" />
+        <h2>Nome da Pessoa — Ciência</h2>
+        <p>Mini-biografia: conquistas em pesquisa e educação.</p>
+        <a href="#" class="read-more">Ler mais</a>
+      </article>
+
+      <article class="card" data-area="politica">
+        <img src="assets/images/personalidade3.jpg" alt="Retrato de [Nome] político(a)" loading="lazy" />
+        <h2>Nome da Pessoa — Política</h2>
+        <p>Mini-biografia: atuação política e defesa de direitos.</p>
+        <a href="#" class="read-more">Ler mais</a>
+      </article>
+
+      <!-- Adicione mais cards (pelo menos 3 imagens por página no total) -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Créditos e referências no README.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
